@@ -7,14 +7,17 @@
   <title>Document</title>
 </head>
 <body>
-  <form id="contact" action="echo.pl"   method="post">
-    <fieldset>
-      <legend> Forma </legend>
-      Name: <input type="text" name="Name" value="">
-      <br><br>
-      Email: <input type="text" name="Email" value="">
-    </fieldset>
-    <input type="submit">
+ <form id="feedbackForm">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="message">Сообщение:</label>
+    <textarea id="message" name="message" required></textarea>
+  
+    <button type="submit">Отправить</button>
   </form>
   
 </body>
